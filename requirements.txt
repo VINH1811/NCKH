@@ -1,4 +1,12 @@
 streamlit
 pandas
 joblib
+numpy
 plotly
+matplotlib
+pillow
+xgboost
+scikit-learn
+category_encoders
+imbalanced-learn
+streamlit-lottie
