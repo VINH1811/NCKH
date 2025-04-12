@@ -426,7 +426,7 @@ elif page == "📝 Phân tích mới":
 
     with col2:
         with st.expander("Thông tin tài chính & mục đích vay", expanded=True):
-            credit_amount = st.number_input("💵 Khoản vay (DM)", min_value=500, max_value=50000, value=10000, step=100)
+            credit_amount = st.number_input("💵 Khoản vay (USD)", min_value=500, max_value=50000, value=10000, step=100)
             duration = st.slider("🕒 Thời hạn vay (tháng)", 6, 72, 24)
             purpose = st.selectbox("🎯 Mục đích vay", ["Mua ô tô", "Mua nội thất/trang thiết bị", "Mua radio/TV", "Mua thiết bị gia dụng", "Sửa chữa", "Giáo dục", "Kinh doanh", "Du lịch/Khác"])
             purpose_mapping = {"Mua ô tô": "car", "Mua nội thất/trang thiết bị": "furniture/equipment", "Mua radio/TV": "radio/TV", "Mua thiết bị gia dụng": "domestic appliances",
@@ -445,7 +445,7 @@ elif page == "📝 Phân tích mới":
             st.markdown("""
                 <div class="tooltip">
                     💰 Tài khoản tiết kiệm
-                    <span class="tooltiptext">Không có: 0 DM<br>Ít: 1-500 DM<br>Trung bình: 501-1000 DM<br>Khá nhiều: 1001-5000 DM<br>Nhiều: >5000 DM</span>
+                    <span class="tooltiptext">Không có: 0 USD<br>Ít: 1-500 USD<br>Trung bình: 501-1000 USD<br>Khá nhiều: 1001-5000 USD<br>Nhiều: >5000 USD</span>
                 </div>
             """, unsafe_allow_html=True)
             saving_accounts = st.selectbox("", ["Không có", "Ít", "Trung bình", "Khá nhiều", "Nhiều"], key="savings")
@@ -455,7 +455,7 @@ elif page == "📝 Phân tích mới":
             st.markdown("""
                 <div class="tooltip">
                     🏦 Tài khoản vãng lai
-                    <span class="tooltiptext">Không có: 0 DM<br>Ít: 1-200 DM<br>Trung bình: 201-500 DM<br>Nhiều: >500 DM</span>
+                    <span class="tooltiptext">Không có: 0 USD<br>Ít: 1-200 USD<br>Trung bình: 201-500 USD<br>Nhiều: >500 USD</span>
                 </div>
             """, unsafe_allow_html=True)
             checking_account = st.selectbox("", ["Không có", "Ít", "Trung bình", "Nhiều"], key="checking")
